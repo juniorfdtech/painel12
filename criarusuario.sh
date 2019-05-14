@@ -83,7 +83,9 @@ else
 													pass=$(perl -e 'print crypt($ARGV[0], "password")' $password)
 													useradd -e $final -M -s /bin/false -p $pass $username
 													[ $? -eq 0 ] && tput setaf 2 ; tput bold ; echo ""; echo "13" ; echo "" ; echo "" ; echo "" || echo "14" ; tput sgr0
+                                 echo "$password" > /etc/SSHPlus/senha/$username
 													echo "$username $sshlimiter" >> /root/usuarios.db
+													
 												fi
 											fi
 										fi
