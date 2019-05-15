@@ -12,6 +12,7 @@ wget https://raw.githubusercontent.com/juniorfdtech/painel12/master/KillUser.sh 
 wget https://raw.githubusercontent.com/juniorfdtech/painel12/master/sshmonitor.sh > /dev/null 2>&1
 wget https://raw.githubusercontent.com/juniorfdtech/painel12/master/alterarlimite.sh > /dev/null 2>&1
 wget https://raw.githubusercontent.com/juniorfdtech/painel12/master/backup.sh > /dev/null 2>&1
+touch /root/usuarios.db > /dev/null 2>&1
 chmod 777 *sh
 service ssh restart
 echo -e "\n\033[1;32mCONCLUIDO!\033[0m"
